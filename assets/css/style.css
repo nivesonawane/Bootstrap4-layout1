@@ -54,6 +54,25 @@
     transform: translateY(-50%);
 }
 
+/* ############### homeparallax css ##################### */
+.homeParallax{
+    /* background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/lights.jpg); */
+    background-image: url(../images/lights.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.homeParallax::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+    left: 0;
+    top: 0;  
+}
 
 @media all and (min-width: 992px){
     .ptNavbar .nav-link{
