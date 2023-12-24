@@ -55,12 +55,15 @@
 }
 
 /* ############### homeparallax css ##################### */
-.homeParallax{
-    /* background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/lights.jpg); */
-    background-image: url(../images/lights.jpg);
+.parallax{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.homeParallax{
+    /* background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(../images/lights.jpg); */
+    background-image: url(../images/lights.jpg);   
     position: relative;
 }
 
@@ -77,11 +80,19 @@
 /* ############## video section #################### */
   .video{
     background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../images/media.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
+  /* ############## photo gallary section #################### */
+  .photoGallary img{
+       width: 100%;
+       height: 300px;
+       object-fit: cover;
+  }
+
+  .footer{
+    background-color: var(--color-dark);
+  }
+  
 @media all and (min-width: 992px){
     .ptNavbar .nav-link{
         margin-left: 7px;
