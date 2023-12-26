@@ -92,6 +92,13 @@
   .footer{
     background-color: var(--color-dark);
   }
+
+  #testTestimonialsCarousel img{
+    width: 80%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 2px solid var(--color-white);
+  }
   
 @media all and (min-width: 992px){
     .ptNavbar .nav-link{
